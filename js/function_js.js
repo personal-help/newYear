@@ -42,6 +42,9 @@ $(document).ready(function(){
     $(".part1").bind("click", bodyColor);
     
     $(".part3").bind("click", calculate);
+    $(".part4").bind("click", function(){
+        alert("ТЫ ЧО ДУРАК!? ОН КОЛЬЯН КУРИТ! ЕМУ НЕКОГДА С НАМИ ТУСИТЬ!")
+    });
 });
 
 function calculate(){
