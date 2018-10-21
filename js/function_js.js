@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 function calculate(){
     var number = prompt("Количество участников торжества");
-    var summ = number * prompt("Количество участников торжества");
+    var summ = number * prompt("Взнос каждого участника");
     if(!summ || summ<3000){
         alert("ЭТО НЕ ДЕНЬГИ");
      }else{
