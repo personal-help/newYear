@@ -3,7 +3,7 @@ function println(text){ document.write("<br>" + text); }
 
 function bodyColor(){
     var col = prompt("Ввод цвета body по кодировке #0000 или английским названием!");
-    $(".container .cols").css("background", col);
+    $("body").css("background", col);
 }
          
 function userName(){
@@ -32,6 +32,7 @@ function showMenu(){
 $(document).ready(function(){
     showMenu();
     
+    
     $("#hdOne").show(400);
     $("#hdTwo").show(600);
     $("#hdThr").show(800);
@@ -44,6 +45,10 @@ $(document).ready(function(){
     $(".part3").bind("click", calculate);
     $(".part4").bind("click", function(){
         alert("ТЫ ЧО ДУРАК!? ОН КОЛЬЯН КУРИТ! ЕМУ НЕКОГДА С НАМИ ТУСИТЬ!")
+    });
+    
+    $(".part5").bind("click", function(){
+        $('#muztext').slideDown(1000);
     });
 });
 

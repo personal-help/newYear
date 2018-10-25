@@ -34,7 +34,7 @@ h1{
 } 
 
 .container .cols{
-    background: #107070;
+    background: url("https://get.wallhere.com/photo/minimalism-texture-black-662060.jpg");
     border: 3px  outset;
     border-color: azure aqua;
     float: left;
@@ -44,13 +44,13 @@ h1{
 } 
 
 .container .cols.col-1    {width: 8.33%;}
-.container .cols.col-2    {width: 16.66%; height: 500px;border-radius: 5px;}
+.container .cols.col-2    {width: 16.66%; height: auto;border-radius: 5px;}
 .container .cols.col-3    {width: 25%;}
 .container .cols.col-4    {width: 33.33%;margin-top: 10px;}
 .container .cols.col-5    {width: 41.66%;}
 .container .cols.col-6    {width: 50%;}
 .container .cols.col-7    {width: 58.33%;}
-.container .cols.col-8    {width: 66.66%; background: url("http://moya-muzyka.ru/uploads/images/steklovata_novij_god.jpg"); height: 500px; text-align: left; font-size: 1.5em; border-radius: 5px; padding: 20px; }
+.container .cols.col-8    {width: 66.66%; background: url("https://visavi.net/uploads/news/244.jpg"); height: 520px; text-align: left; font-size: 1.5em; border-radius: 5px; padding: 20px; }
 .container .cols.col-9    {width: 75%;}
 .container .cols.col-10   {width: 83.33%;}
 .container .cols.col-11   {width: 91.66%;}
@@ -91,37 +91,9 @@ h1{
 #hide:hover{ background: rgb(20,70,70);}
 #show:hover{ background: rgb(10,70,70);}
 
-#loading, #loading:before, #loading:after{
-    border: 3px solid transparent;
-    border-radius: 50%;
+#muztext{
+    display: none;
 }
-
-#loading:before, #loading:after{
-    content: ' ';
-    position: absolute;
-}
-
-#loading{
-    width: 150px;
-    height: 150px;
-    margin: 50px auto;
-    position: relative;
-    border-top-color: yellow;
-    transform: rotate(720deg);
-    transition: 3s;
-}
-
-#loading:before{
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-top-color: darkblue;
-    transform: rotate(860deg);
-    transition: 2s;
-}
-
-
 
 #loading:after{
     top: 40px;
@@ -131,5 +103,20 @@ h1{
     border-top-color: red;
     transform: rotate(980deg);
     transition: 3s;
+}
+
+@media screen and (max-width: 400px){
+.container .cols.col-1    {width: 100%;}
+.container .cols.col-2    {width: 100%;}
+.container .cols.col-3    {width: 100%;}
+.container .cols.col-4    {width: 100%;}
+.container .cols.col-5    {width: 100%;}
+.container .cols.col-6    {width: 100%;}
+.container .cols.col-7    {width: 100%;}
+.container .cols.col-8    {width: 100%;}
+.container .cols.col-9    {width: 100%;}
+.container .cols.col-10   {width: 100%;}
+.container .cols.col-11   {width: 100%;}
+.container .cols.col-12   {width: 100%;}
 }
 
