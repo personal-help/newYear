@@ -105,7 +105,7 @@ h1{
     transition: 3s;
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 350px){
 .container .cols.col-1    {width: 100%;}
 .container .cols.col-2    {width: 100%;}
 .container .cols.col-3    {width: 100%;}
