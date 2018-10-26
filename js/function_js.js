@@ -16,14 +16,14 @@ function userName(){
 }     
          
 function hideMenu(){
-    $("#headMenu").hide(800, function(){
+    $("#headMenu").slideUp(600, function(){
         $("#hide").hide(300);
         $("#show").show(300);
     });
 }
          
 function showMenu(){
-    $("#headMenu").show(800, function(){
+    $("#headMenu").slideDown(600, function(){
         $("#show").hide(300);
         $("#hide").show(300);
     });
@@ -49,6 +49,11 @@ $(document).ready(function(){
     
     $(".part5").bind("click", function(){
         $('#muztext').slideDown(1000);
+    });
+    
+    $(".part6").bind("click", function(){
+        $(".cols.col-8").css("background", "white").css("color", "black");
+        $(".engineSys").slideDown(600);
     });
 });
 

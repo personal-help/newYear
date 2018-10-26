@@ -44,7 +44,7 @@ h1{
 } 
 
 .container .cols.col-1    {width: 8.33%;}
-.container .cols.col-2    {width: 16.66%; height: auto;border-radius: 5px;}
+.container .cols.col-2    {width: 16.66%; height: auto;border-radius: 5px; overflow: auto;}
 .container .cols.col-3    {width: 25%;}
 .container .cols.col-4    {width: 33.33%;margin-top: 10px;}
 .container .cols.col-5    {width: 41.66%;}
@@ -69,7 +69,7 @@ h1{
     margin: 5px;
     padding: 5px;
     border: 2px outset;
-    border-color: red aqua;
+    border-color: green aqua;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
 }
@@ -85,7 +85,7 @@ h1{
     margin: 5px;
     padding: 5px;
     border: 2px outset;
-    border-color: aqua red;
+    border-color: aqua blue;
 }
 
 #hide:hover{ background: rgb(20,70,70);}
@@ -93,6 +93,7 @@ h1{
 
 #muztext{
     display: none;
+    height: 496px;
 }
 
 #loading:after{
@@ -105,7 +106,7 @@ h1{
     transition: 3s;
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 350px){
 .container .cols.col-1    {width: 100%;}
 .container .cols.col-2    {width: 100%;}
 .container .cols.col-3    {width: 100%;}
