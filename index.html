@@ -43,11 +43,11 @@
         <form id="form1" name="form1">
             <ul id="headMenu" style="display:none">
                 <li id="menu" class="part1">Цвет настроения</li>     
-                <li id="menu" class="part3">РАСЧЁТЫ ЗАТРАТ</li>
                 <li id="menu" class="part5">Слова Любимой песни</li>
+                <li id="menu" class="part3">Система вычислений</li>
                 <li id="menu" class="part2" onclick="$('.part2').hide()"> Лёха</li>
                 <li id="menu" class="part4" onclick="$('.part4').hide()"> Гриша</li>
-                <li id="menu" class="part6">Система вычислений</li>
+                
             </ul>
         </form>
         <p id="show">Показать меню</p>
@@ -58,23 +58,32 @@
      <div class="engineSys" style="display: none"> 
        
        <h2>Система расчётов</h2><hr><br>
-       
-          <form method="post" action="#">
-              
-              <input id="input" required placeholder="Участники">        
-              <input id="input" placeholder="Участницы">        
-              <input id="input" required placeholder="Минимальный взнос">
-              <input id="input" required placeholder="Жильё">            
-              <input id="input" required placeholder="Пищща">            
-              <input id="input" required placeholder="Пиво в литрах">    
-              <input id="input" required placeholder="Коньяк в литрах">  
-              <input id="input" required placeholder="Сушняк в литрах">  <br> <br>
-              <button id="inBut">Погнали!</button>               
-              
-          </form>
+                     
+         <input class="a" id="input" required placeholder="Участники">        
+         <input class="b" id="input" placeholder="Участницы">       <hr>
+         <input class="c" id="input" required placeholder="Минимальный взнос"> <hr>
+         <input class="d" id="input" required placeholder="Цена жилья">  
+             <input class="dd" id="input" placeholder="Количество дней">  <hr>           
+         <input class="e" id="input" placeholder="Пищща">       
+             <input class="ee" id="input" placeholder="Цена поштучно (кг, пачка, упаковка)"> <hr>
+         <input class="f" id="input" placeholder="Жидкость 1">  
+             <input class="ff" id="input" placeholder="Объём в литрах"> 
+                 <input class="fff" id="input" placeholder="Цена за литр">  <hr>
+         <input class="g" id="input" placeholder="Жидкость 2"> 
+             <input class="gg" id="input" placeholder="Объём в литрах"> 
+                 <input class="ggg" id="input" placeholder="Цена за литр">  <hr>
+         <input class="h" id="input" placeholder="Сушняк"> 
+             <input class="hh" id="input" placeholder="Объём в литрах"> 
+                 <input class="hhh" id="input" placeholder="Цена за литр"> <hr> <br>
+         <button id="inBut">МАТЕМАТИЧЕСКИЙ РАСЧЁТ</button>                    
      
      </div>          
    </div>
+      
+      <div class="cols col-7">
+          
+          
+      </div>
       
    <div class="cols col-2">
        <div id="muztext" >

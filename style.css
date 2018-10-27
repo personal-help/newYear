@@ -49,7 +49,7 @@ h1{
 .container .cols.col-4    {width: 33.33%;margin-top: 10px;}
 .container .cols.col-5    {width: 41.66%; }
 .container .cols.col-6    {width: 50%; border: 2px solid red;}
-.container .cols.col-7    {width: 58.33%;}
+.container .cols.col-7    {width: 58.33%; height: auto; position: absolute; top: 30%; left: 20%; display: none; border-radius: 15px; font-size: 1.5em; text-align: left; padding-left: 20px; padding-right: 20px;}
 .container .cols.col-8    {width: 66.66%; background: url("https://visavi.net/uploads/news/244.jpg"); height: 520px; text-align: left; font-size: 1.5em; border-radius: 5px;}
 .container .cols.col-9    {width: 75%;}
 .container .cols.col-10   {width: 83.33%;}
@@ -122,13 +122,14 @@ h1{
 #input{
     padding-left: 30px;
     margin-bottom: 5px;
+    margin-top: 5px;
     height: 35px;
-    width: 50%;    
+    width: 30%;    
     border: 3px solid red;
     border-radius: 15px;
 }
 
-#inBut{
+#inBut,#outBut{
     width: 100%;
     height: 50px;
     border-radius: 20px;
