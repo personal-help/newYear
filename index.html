@@ -25,10 +25,33 @@
         <div class="cols col-4" id="hdThr">
           
             <script>
-                var dt = new Date();
-                var time = dt.getHours() + ":" + dt.getMinutes();
                 
-                print(time);
+                /*dt.getDate() 
+                dt.getMonth()
+                dt.getFullYear()  
+                dt.getHours()   
+                dt.getMinutes() 
+                dt.getSeconds()*/
+
+                
+                var yearMin = 525600;
+                var dt = new Date();
+                //var time = dt.getHours() + ":" + dt.getMinutes();
+                
+                var month = dt.getMonth();
+                var day = dt.getDate();
+                
+                var days = 365 - ((month*30) + day + 3);
+                
+                var nowMonth = Math.floor(days/30);
+                
+                var nowDay = days%30 - 1;
+                
+                var hour = 23 - dt.getHours();
+                var minute = 60 - dt.getMinutes();
+                
+                print("ОСТАЛОСЬ:  " + nowMonth +" месяца "+ nowDay +" дня " + hour + " часа " +minute+ " минут ") ;
+                
             </script>
                 
         </div> 
@@ -47,6 +70,10 @@
                 <li id="menu" class="part3">Система вычислений</li>
                 <li id="menu" class="part2" onclick="$('.part2').hide()"> Лёха</li>
                 <li id="menu" class="part4" onclick="$('.part4').hide()"> Гриша</li>
+                <li id="menu" class="part4">Списки</li>
+                <li id="menu" class="part4">Взносы</li>
+                <li id="menu" class="part4">О нас</li>
+                <li id="menu" class="part4">Обратная связь</li>
                 
             </ul>
         </form>
@@ -60,8 +87,8 @@
        <h2>Система расчётов</h2><hr><br>
                      
          <input class="a" id="input" required placeholder="Участники">        
-         <input class="b" id="input" placeholder="Участницы">       <hr>
-         <input class="c" id="input" required placeholder="Минимальный взнос"> <hr>
+             <input class="b" id="input" placeholder="Участницы">       
+                 <input class="c" id="input" required placeholder="Минимальный взнос"> <hr>
          <input class="d" id="input" required placeholder="Цена жилья">  
              <input class="dd" id="input" placeholder="Количество дней">  <hr>           
          <input class="e" id="input" placeholder="Пищща">       
@@ -82,7 +109,27 @@
       
       <div class="cols col-7">
           
+          <h1>Результаты</h1>
           
+          Количество участников..         <script>print(people); </script><br> 
+          Общий фонд....................  <script>print(summ);   </script><br>
+          Жильё обойдётся в.........      <script>print(home);   </script><br>
+          Хавчика на......................<script>print(eatAll); </script><br>
+          Сушняка на..................... <script>print(drink3); </script><br>
+          Бухла на.......................... <script>print(drink);  </script><br><br>
+          
+          <button id="outBut" class="">OK</button><br><br>
+          
+      </div>
+      
+      <div id="regform">
+              <br>   
+         <input id="inputr" placeholder="Имя"> <br>       
+         <input id="inputr" placeholder="Погоняло"><br>        
+         <input id="inputr" placeholder="Фамилия">     <br>   
+         <input id="inputr" placeholder="Возраст">        <br><br>
+          <button id="inBut" class="regBut">Регистрация</button>         
+              
       </div>
       
    <div class="cols col-2">
@@ -136,8 +183,10 @@
   </main>
         
   <footer>
-      <div class="row cols col-12">         
+      <div class="row cols col-12">     
+       <br><br><br>    
         <h1>К ТАКОМУ ВАС ЖИЗНЬ НЕ ГОТОВИЛА</h1>
+      <br><br><br>
       </div>
   </footer>
             

@@ -55,6 +55,16 @@ $(document).ready(function(){
         $(".engineSys").slideDown(600);
     });
     
+     $("#hdTwo").bind("click", function(){
+       $("#regform").show(500); 
+    });
+    
+    $(".regBut").bind("click", function(){
+       $("#regform").hide(600); 
+        
+        alert("НА ДАННЫЙ МОМЕНТ ВЫ НЕ ЧЛЕН ОБЩЕСТВА НОВОГОДНЕГО ВЕСЕЛЬЯ!\n ОБРАТИТЕСЬ К АДМИНИСТРАЦИИ ТОРЖЕСТВА!\n ");
+    });
+    
     $("#inBut").bind("click", function(){
         
         var men = $(".a").val();
@@ -83,12 +93,12 @@ $(document).ready(function(){
         var drink3 = dri32 * dri33;
         var drink = drink1+drink2;
 
-          alert("Количество участников " + people + "\n" 
+          /*alert("Количество участников " + people + "\n" 
                 +"Общий фонд "+ summ+"\n"
                 +"Жильё обойдётся в "+ home +"\n"
                 +"Хавчика на "+ eatAll +"\n"
                 +"Сушняка на "+ drink3 +"\n"
-                +"Бухла на "+ drink);
+                +"Бухла на "+ drink);*/
         
        $(".cols.col-7").show(500);
         
