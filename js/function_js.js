@@ -117,8 +117,6 @@ $(document).ready(function(){
          drink3 = dri32 * dri33;
          drink = drink1+drink2;
         
-        alert(people);
-        
        $(".cols.col-7").show(500);
         
     });
