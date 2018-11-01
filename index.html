@@ -10,7 +10,7 @@
      
      <link rel="icon" href="http://www.m-house.ua/image/cache/catalog/pictures/2627__1293096853-200x200.jpg">
      <link rel="stylesheet" href="style.css">
-     <link rel="icon" href="img/">
+     <link rel="icon" href="https://im0-tub-kz.yandex.net/i?id=eca0dc991c2b1431a21e86b683d8daaa&n=13">
         <script src="js/jQuery/Library.js"></script>
         <script type="text/javascript" src="js/function_js.js"></script>
  </head>
@@ -25,18 +25,9 @@
         <div class="cols col-4" id="hdThr">
           
             <script>
-                
-                /*dt.getDate() 
-                dt.getMonth()
-                dt.getFullYear()  
-                dt.getHours()   
-                dt.getMinutes() 
-                dt.getSeconds()*/
-
-                
+                        
                 var yearMin = 525600;
                 var dt = new Date();
-                //var time = dt.getHours() + ":" + dt.getMinutes();
                 
                 var month = dt.getMonth();
                 var day = dt.getDate();
@@ -50,7 +41,7 @@
                 var hour = 23 - dt.getHours();
                 var minute = 60 - dt.getMinutes();
                 
-                print("ОСТАЛОСЬ:  " + nowMonth +" месяца "+ nowDay +" дня " + hour + " часов " +minute+ " минут ") ;
+                print("ОСТАЛОСЬ:  " + nowMonth +" месяца "+ nowDay +" дней " + hour + " часа " +minute+ " минут ") ;
                 
             </script>
                 
@@ -70,10 +61,10 @@
                 <li id="menu" class="part3">Система вычислений</li>
                 <li id="menu" class="part2" onclick="$('.part2').hide()"> Лёха</li>
                 <li id="menu" class="part4" onclick="$('.part4').hide()"> Гриша</li>
-                <li id="menu" class="part6">Списки</li>
-                <li id="menu" class="part7">Взносы</li>
-                <li id="menu" class="part8">О нас</li>
-                <li id="menu" class="part9">Обратная связь</li>
+                <li id="menu" class="part4">Списки</li>
+                <li id="menu" class="part4">Взносы</li>
+                <li id="menu" class="part4">О нас</li>
+                <li id="menu" class="part4">Обратная связь</li>
                 
             </ul>
         </form>
@@ -86,22 +77,22 @@
        
        <h2>Система расчётов</h2><hr><br>
                      
-         <input class="a" id="input" required placeholder="Участники">        
-             <input class="b" id="input" placeholder="Участницы">       
-                 <input class="c" id="input" required placeholder="Минимальный взнос"> <hr>
-         <input class="d" id="input" required placeholder="Цена жилья">  
-             <input class="dd" id="input" placeholder="Количество дней">  <hr>           
-         <input class="e" id="input" placeholder="Пищща">       
-             <input class="ee" id="input" placeholder="Цена поштучно (кг, пачка, упаковка)"> <hr>
-         <input class="f" id="input" placeholder="Жидкость 1">  
-             <input class="ff" id="input" placeholder="Объём в литрах"> 
-                 <input class="fff" id="input" placeholder="Цена за литр">  <hr>
-         <input class="g" id="input" placeholder="Жидкость 2"> 
-             <input class="gg" id="input" placeholder="Объём в литрах"> 
-                 <input class="ggg" id="input" placeholder="Цена за литр">  <hr>
-         <input class="h" id="input" placeholder="Сушняк"> 
-             <input class="hh" id="input" placeholder="Объём в литрах"> 
-                 <input class="hhh" id="input" placeholder="Цена за литр"> <hr> <br>
+         <input id="a" class="input" required placeholder="Участники">        
+             <input id="b" class="input" placeholder="Участницы">       
+                 <input id="c" class="input" required placeholder="Минимальный взнос"> <hr>
+         <input id="d" class="input" required placeholder="Цена жилья">  
+             <input id="dd" class="input" placeholder="Количество дней">  <hr>           
+         <input id="e" class="input" placeholder="Пищща">       
+             <input id="ee" class="input" placeholder="Цена поштучно (кг, пачка, упаковка)"> <hr>
+         <input id="f" class="input" placeholder="Жидкость 1">  
+             <input id="ff" class="input" placeholder="Объём в литрах"> 
+                 <input id="fff" class="input" placeholder="Цена за литр">  <hr>
+         <input id="g" class="input" placeholder="Жидкость 2"> 
+             <input id="gg" class="input" placeholder="Объём в литрах"> 
+                 <input id="ggg" class="input" placeholder="Цена за литр">  <hr>
+         <input id="h" class="input" placeholder="Сушняк"> 
+             <input id="hh" class="input" placeholder="Объём в литрах"> 
+                 <input id="hhh" class="input" placeholder="Цена за литр"> <hr> <br>
          <button id="inBut">МАТЕМАТИЧЕСКИЙ РАСЧЁТ</button>                    
      
      </div>          
