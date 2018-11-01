@@ -32,16 +32,16 @@
                 var month = dt.getMonth();
                 var day = dt.getDate();
                 
-                var days = 365 - ((month*30) + day);
+                var days = 365 - ((month*30) + day+3);
                 
                 var nowMonth = Math.floor(days/31);
                 
-                var nowDay = days%30 - 1;
+                var nowDay = days%31;
                 
                 var hour = 23 - dt.getHours();
                 var minute = 60 - dt.getMinutes();
                 
-                print("ОСТАЛОСЬ:  " + nowMonth +" месяца "+ nowDay +" дней " + hour + " часа " +minute+ " минут ") ;
+                print("ОСТАЛОСЬ:  " + nowMonth +" месяц "+ nowDay +" дней " + hour + " часов " +minute+ " минут ") ;
                 
             </script>
                 
