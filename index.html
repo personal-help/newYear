@@ -32,9 +32,9 @@
                 var month = dt.getMonth();
                 var day = dt.getDate();
                 
-                var days = 365 - ((month*30) + day + 3);
+                var days = 365 - ((month*30) + day);
                 
-                var nowMonth = Math.floor(days/30);
+                var nowMonth = Math.floor(days/31);
                 
                 var nowDay = days%30 - 1;
                 
